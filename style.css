@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.first-page {
+  background-image: url(/imgs/coffee\ background.svg);
+  min-width: 100vw;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.primary-nav_bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.logo {
+  padding: 1rem 3rem;
+}
+
+.main-list {
+  width: 80%;
+}
+
+.main-list-items {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1.5rem;
+}
+.main-list-items a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.main-list-items a:hover {
+  opacity: 0.7;
+}
+
+.main-list-items a:active {
+  opacity: 1;
+  color: bisque;
+}
+
+#texture-1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 3rem;
+  padding: 4rem;
+  color: white;
+}
+
+#texture-1 h1 {
+  font-size: 4rem;
+}
+
+.order-button {
+  display: block;
+  background-color: rgb(170, 118, 59);
+  width: 15rem;
+  height: 5rem;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 5rem;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  color: white;
+}
+
+.order-button:hover {
+  background-color: rgb(150, 98, 39);
+}
+
+.order-button:active {
+  opacity: 1;
+  color: bisque;
+}
+
+.second-page {
+  background-image: url(/imgs/second-page-backgorund.jpeg);
+  background-position: center;
+  min-width: 100vw;
+  min-height: 75vh;
+  background-size: cover;
+}
+
+.second-page-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-page-img img {
+  border-radius: 25%;
+  box-shadow: 10px 10px 15px #333;
+  max-width: 100%;
+}
+
+.container-1 {
+  display: flex;
+  gap: 3rem;
+  padding: 5rem;
+}
+
+#texture-2 {
+  display: flex;
+  flex-direction: column;
+  color: #471e22;
+  gap: 3rem;
+  padding-block: 3rem;
+}
+
+#texture-2 h1 {
+  font-size: 3rem;
+}
+
+.view-more {
+  align-self: flex-end;
+  color: white;
+  text-decoration: none;
+  display: block;
+  background-color: rgb(170, 118, 59);
+  width: 15rem;
+  height: 5rem;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 5rem;
+  transition: background-color 0.3s ease;
+}
+
+.view-more:hover {
+  background-color: rgb(150, 98, 39);
+}
+
+.view-more:active {
+  opacity: 1;
+  color: bisque;
+}
+
+.third-page {
+  background-image: url(/imgs/3.background.jpeg);
+  min-height: 75vh;
+  background-position: 10rem 32rem;
+  width: 100vw;
+}
+
+.third-page h1 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-style: oblique;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background-color: #734a39;
+  width: 18rem;
+  gap: 3rem;
+  color: white;
+  border-radius: 15px;
+}
+
+.card img {
+  border-radius: 15px;
+}
+.price-order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-order a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(170, 118, 59);
+  display: block;
+  border-radius: 15px;
+  padding: 0.7rem;
+  transition: background-color 0.3s ease;
+}
+
+.price-order a:hover {
+  background-color: rgb(150, 98, 39);
+}
+.price-order a:active {
+  opacity: 1;
+  color: bisque;
+}
+
+#cards {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 6rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .logo {
+    padding: 0.5rem;
+  }
+  .main-list-items {
+    display: none;
+  }
+  #texture-1 {
+    min-width: 100%;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+  }
+
+  #texture-1 h1 {
+    font-size: 3rem;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    color: white;
+    padding: 0.5rem;
+  }
+
+  .container-1 {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .second-page-img img {
+    height: 200px;
+    width: 275px;
+  }
+  #texture-2 {
+    min-width: 100%;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    gap: 2rem;
+  }
+  #texture-2 h1 {
+    font-size: 3rem;
+  }
+
+  .view-more {
+    align-self: stretch;
+  }
+  #cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .card {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .third-page {
+    background-position: 40rem 102rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .first-page {
+    min-width: 100vw;
+  }
+  .logo {
+    padding: 1rem;
+  }
+  .main-list-items {
+    font-size: 1.5rem;
+  }
+  #texture-1 {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10rem;
+    font-size: 1.8rem;
+  }
+  #texture-1 h1 {
+    font-size: 5rem;
+  }
+  .container-1 {
+    flex-wrap: wrap;
+  }
+
+  .second-page-img {
+    margin: auto;
+  }
+
+  #texture-2 {
+    text-align: center;
+  }
+  .view-more {
+    align-self: center;
+  }
+
+  #cards {
+    flex-wrap: wrap;
+    gap: 2.5rem;
+  }
+
+  .card h3 {
+    font-size: 2.4rem;
+  }
+
+  .price-order {
+    font-size: 1.7rem;
+  }
+}
